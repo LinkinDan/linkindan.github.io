@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HygieneLife</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/open-dyslexic');
+    </style>
+
+</head>
+<body>
+    <header>        
+        <div id="menu">
+            <div class="logo"><a href="index.html">HygieneLife</a></div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </div>
+        
+        <!-- menu dropdown su dispositivi mobili -->
+        <div class="dropdown" id="mobileMenu">
+            <a href="about.html">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Benvenuti! Impariamo insieme alcune norme di igiene personale.</h1>
+        <section class="guide">
+
+            <a href="handwashing.html">
+                <div class="action">
+                    <div>
+                        <img src="materiale/icone_CAA/handwashing.png" alt="Lavarsi le mani" class="icon">
+                    </div>
+                    <div>
+                        <button onclick="playAudio('audio-handwashing')">Lavarsi le mani</button>
+                    </div>
+                    <audio id="audio-handwashing">
+                        <source src="handwashing.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </a>
+
+            <a href="lavaredenti.html">
+                <div class="action">
+                    <div>
+                        <img src="materiale/icone_CAA/brushing-teeth.png" alt="Lavarsi i denti" class="icon">
+                    </div>
+                    <div>
+                        <button onclick="playAudio('audio-teeth')">Lavarsi i denti</button>
+                    </div>
+                    <audio id="audio-teeth">
+                        <source src="brushing-teeth.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </a>
+
+            <a href="shower.html">
+                <div class="action">
+                    <div>
+                        <img src="materiale/icone_CAA/shower.png" alt="Fare la doccia" class="icon">
+                    </div>
+                    <div>
+                        <button onclick="playAudio('audio-shower')">Fare la doccia</button>
+                    </div>
+                    <audio id="audio-shower">
+                        <source src="shower.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </a>
+
+            <a href="nails.html">
+                <div class="action">
+                    <div>
+                        <img src="materiale/icone_CAA/tagliare-unghie.png" alt="Taglio delle unghie" class="icon">
+                    </div>
+                    <div>
+                        <button onclick="playAudio('audio-handwashing')">Taglio delle unghie</button>
+                    </div>
+                    <audio id="audio-handwashing">
+                        <source src="handwashing.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </a>
+
+            <a href="fazzoletto.html">
+                <div class="action">
+                    <div>
+                        <img src="materiale/icone_CAA/soffiare-naso.png" alt="Uso del fazzoletto" class="icon">
+                    </div>
+                    <div>
+                        <button onclick="playAudio('audio-handwashing')">Uso del fazzoletto</button>
+                    </div>
+                    <audio id="audio-handwashing">
+                        <source src="handwashing.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </a>
+
+            <a href="abbigliamento.html">
+                <div class="action">
+                    <div>
+                        <img src="materiale/icone_CAA/maglietta.png" alt="Abbigliamento pulito" class="icon">
+                    </div>
+                    <div>
+                        <button onclick="playAudio('audio-shower')">Abbigliamento pulito</button>
+                    </div>
+                    <audio id="audio-shower">
+                        <source src="shower.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </a>
+
+        </section>
+
+    </main>
+    <br>
+    <br>
+
+    <footer>
+        <p>2024 - HygieneLife</p>
+        <p>I simboli pittografici utilizzati sono di proprietà del governo di Aragona e sono stati creati da Sergio Palao per <a href="http://www.arasaac.org">ARASAAC</a>, che li distribuisce sotto <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it">Licenza Creative Commons BY-NC-SA</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
