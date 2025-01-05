@@ -103,6 +103,10 @@ main {
     gap: 10px;
 }
 
+.guide > a {
+    text-decoration: none;
+}
+
 .action {
     background-color: white;
     border: 2px solid #ddd;
@@ -112,6 +116,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    text-decoration: none;
 }
 
 .action div:last-of-type {
@@ -121,6 +126,24 @@ main {
 .icon {
     width: 60%;
     height: auto;
+}
+
+.button {
+    font-family: 'Open-Dyslexic', sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button:hover {
+    background-color: #419645;
 }
 
 button {
