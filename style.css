@@ -208,6 +208,10 @@ footer > p {
     padding-right: 15px;
 }
 
+footer a {
+    color: #810101;
+}
+
 
 
 /* Responsive design */
