@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HygieneLife</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="materiale/favicon.png">
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/open-dyslexic');
+    </style>
+
+</head>
+<body>
+    <header>        
+        <div id="menu">
+            <div class="logo"><a href="index.html">HygieneLife</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="presentazione.html">Presentazione</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </div>
+        
+        <!-- menu dropdown su dispositivi mobili -->
+        <div class="dropdown" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="presentazione.html">Presentazione</a>
+        </div>
+    </header>
+
+    <main>
+
+        <h1>Impariamo a lavarci correttamente le mani!</h1>
+        <h2>Premi i pulsanti verdi per la guida audio</h2>
+        <section class="guide">
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/lavare_mani/aprire_acqua.png" alt="Icona che rappresenta un rubinetto che viene aperto" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('apri_acqua')">Apri l'acqua</button>
+                </div>
+                <audio id="apri_acqua">
+                    <source src="materiale/audio/mani1.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/lavare_mani/sciacquare.png" alt="Icona che rappresenta delle mani sotto l'acqua del rubinetto" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('bagna_mani')">Bagna le mani</button>
+                </div>
+                <audio id="bagna_mani">
+                    <source src="materiale/audio/mani2.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/lavare_mani/insaponare2.png" alt="Icona che rappresenta un dispenser per il sapone" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('applica_sapone')">Applica il sapone</button>
+                </div>
+                <audio id="applica_sapone">
+                    <source src="materiale/audio/mani3.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/lavare_mani/spalmare.png" alt="Icona che rappresenta lo strofinarsi le mani" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('strofina_mani')">Strofina le mani</button>
+                </div>
+                <audio id="strofina_mani">
+                    <source src="materiale/audio/mani4.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/lavare_mani/palmi.png" alt="Icona che rappresenta i palmi delle mani" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('palmi')">Prima i palmi</button>
+                </div>
+                <audio id="palmi">
+                    <source src="materiale/audio/mani5.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/lavare_mani/dorso.png" alt="Icona che rappresenta il dorso della mano" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('dorso')">Poi il dorso</button>
+                </div>
+                <audio id="dorso">
+                    <source src="materiale/audio/mani6.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/lavare_mani/dita_pollici.png" alt="Icona che rappresenta dita e pollice di una mano" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('dita_pollici')">Infine, dita e pollici</button>
+                </div>
+                <audio id="dita_pollici">
+                    <source src="materiale/audio/mani7.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/handwashing.png" alt="Icona che rappresenta lo sciacquare via il sapone dalle mani" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('risciacqua')">Risciacqua le mani</button>
+                </div>
+                <audio id="risciacqua">
+                    <source src="materiale/audio/mani8.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/lavare_mani/asciugare_mani.png" alt="Icona che rappresenta l'asciugarsi le mani con l'asciugmano" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('asciugare_mani')">Asciuga le mani</button>
+                </div>
+                <audio id="asciugare_mani">
+                    <source src="materiale/audio/mani9.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/lavare_mani/chiudere_acqua.png" alt="Chiudi l'acqua" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('chiudi_acqua')">Chiudi l'acqua</button>
+                </div>
+                <audio id="chiudi_acqua">
+                    <source src="materiale/audio/mani10.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+        </section>
+        <br>
+        <br>
+
+        <h2>Consigli utili:</h2>
+            <h3>Non lasciare l'acqua aperta mentre ti insaponi le mani</h3>
+            <h3>Cerca di strofinare le mani per almeno 20 secondi</h3>
+            <br>
+        
+        <h2>Guarda un video!:</h2>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/ZwKHozJOd_E?si=E65F2jFPZXfUu7RI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>2024 - HygieneLife</p>
+        <p>I simboli pittografici utilizzati sono di proprietà del governo di Aragona e sono stati creati da Sergio Palao per <a href="http://www.arasaac.org">ARASAAC</a>, che li distribuisce sotto <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it">Licenza Creative Commons BY-NC-SA</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

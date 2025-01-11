@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HygieneLife</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="materiale/favicon.png">
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/open-dyslexic');
+    </style>
+
+</head>
+<body>
+    <header>        
+        <div id="menu">
+            <div class="logo"><a href="index.html">HygieneLife</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="presentazione.html">Presentazione</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </div>
+        
+        <!-- menu dropdown su dispositivi mobili -->
+        <div class="dropdown" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="presentazione.html">Presentazione</a>
+        </div>
+    </header>
+
+    <main>
+
+        <h1>Impariamo a farci correttamente la doccia!</h1>
+        <h2>Premi i pulsanti verdi per la guida audio</h2>
+        <section class="guide">
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/andare.png" alt="Icona che rappresenta l'andare verso una direzione" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('vai')">Vai</button>
+                </div>
+                <audio id="vai">
+                    <source src="materiale/audio/doccia1.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/in.png" alt="Icona che esprime il concetto di 'all'interno'" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('in')">In</button>
+                </div>
+                <audio id="in">
+                    <source src="materiale/audio/doccia2.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/bagno.png" alt="Icona che rappresenta la stanza 'bagno'" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('bagno')">Bagno</button>
+                </div>
+                <audio id="bagno">
+                    <source src="materiale/audio/doccia3.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/prendere.png" alt="Icona che rappresenta l'azione di prendere" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('prendi')">Prendi</button>
+                </div>
+                <audio id="prendi">
+                    <source src="materiale/audio/doccia4.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/sapone.png" alt="Icona che rappresenta un flacone di sapone" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('sapone')">Sapone</button>
+                </div>
+                <audio id="sapone">
+                    <source src="materiale/audio/doccia5.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/più.png" alt="Icona che rappresenta il simbolo più" class="icon">
+                </div>
+                <div>    
+                    <button onclick="playAudio('e')">E</button>
+                </div>
+                <audio id="e">
+                    <source src="materiale/audio/e.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/asciugamano.png" alt="Icona che raffigura un asciugamano" class="icon">
+                </div>
+                <div>    
+                    <button onclick="playAudio('asciugamano')">Asciugamano</button>
+                </div>
+                <audio id="asciugamano">
+                    <source src="materiale/audio/doccia6.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/togliere_vestiti.png" alt="Icona che rappresenta una persona che si toglie i vestiti" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('togli_vestiti')">Togli i vestiti</button>
+                </div>
+                <audio id="togli_vestiti">
+                    <source src="materiale/audio/doccia7.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/entrare.png" alt="Icona che rappresenta il verbo 'entrare'" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('entra')">Entra</button>
+                </div>
+                <audio id="entra">
+                    <source src="materiale/audio/doccia8.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/box_doccia.png" alt="Icona che rappresenta una doccia" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('nella_doccia')">Nella doccia</button>
+                </div>
+                <audio id="nella_doccia">
+                    <source src="materiale/audio/doccia9.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/insaponare.png" alt="Icona che rappresenta il verbo 'insaponare'" class="icon">
+                </div>
+                <div>    
+                    <button onclick="playAudio('insapona')">Insapona</button>
+                </div>
+                <audio id="insapona">
+                    <source src="materiale/audio/doccia10.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/capelli.png" alt="Icona che rappresenta dei capelli" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('capelli')">Capelli</button>
+                </div>
+                <audio id="capelli">
+                    <source src="materiale/audio/doccia11.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/più.png" alt="Icona che rappresenta il simbolo più" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('e')">E</button>
+                </div>
+                <audio id="e">
+                    <source src="materiale/audio/e.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/corpo.png" alt="Icona che rappresenta il corpo" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('corpo')">Corpo</button>
+                </div>
+                <audio id="corpo">
+                    <source src="materiale/audio/doccia12.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/risciacquare.png" alt="Icona che rappresenta l'atto di risciacquare" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('risciacqua')">Risciacqua</button>
+                </div>
+                <audio id="risciacqua">
+                    <source src="materiale/audio/doccia13.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/capelli.png" alt="Icona che rappresenta dei capelli" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('capelli')">Capelli</button>
+                </div>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/più.png" alt="Icona che rappresenta il simbolo più" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('e')">E</button>
+                </div>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/corpo.png" alt="Icona che rappresenta il corpo" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('corpo')">Corpo</button>
+                </div>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/asciugare.png" alt="Icona che rappresenta l'atto di asciugare" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('asciuga')">Asciuga</button>
+                </div>
+                <audio id="asciuga">
+                    <source src="materiale/audio/doccia14.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/capelli.png" alt="Icona che rappresenta dei capelli" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('capelli')">Capelli</button>
+                </div>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/più.png" alt="Icona che rappresenta il simbolo più" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('e')">E</button>
+                </div>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/corpo.png" alt="Icona che rappresenta il corpo" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('corpo')">Corpo</button>
+                </div>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/vestirsi.png" alt="Icona che rappresenta il verbo 'indossare'" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('indossa')">Indossa</button>
+                </div>
+                <audio id="indossa">
+                    <source src="materiale/audio/doccia15.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/doccia/abiti_puliti.png" alt="Icona che rappresenta degli abiti piegati" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('abiti_puliti')">Abiti puliti</button>
+                </div>
+                <audio id="abiti_puliti">
+                    <source src="materiale/audio/doccia16.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            
+
+        </section>
+        <br>
+        <br>
+
+        <h2>Consigli utili:</h2>
+            <h3>Regola la temperatura dell'acqua in modo che sia confortevole</h3>
+            <br>
+       
+        <h2>Guarda un video!:</h2>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/YutH8YLD5vk?si=riMc2Pi7Nkc6eJcV" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>2024 - HygieneLife</p>
+        <p>I simboli pittografici utilizzati sono di proprietà del governo di Aragona e sono stati creati da Sergio Palao per <a href="http://www.arasaac.org">ARASAAC</a>, che li distribuisce sotto <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it">Licenza Creative Commons BY-NC-SA</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
