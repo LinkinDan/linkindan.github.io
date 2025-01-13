@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HygieneLife</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="materiale/favicon.png">
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/open-dyslexic');
+    </style>
+
+</head>
+<body>
+    <header>        
+        <div id="menu">
+            <div class="logo"><a href="index.html">HygieneLife</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="HygienLife.pdf">Presentazione</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </div>
+        
+        <!-- menu dropdown su dispositivi mobili -->
+        <div class="dropdown" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="HygienLife.pdf">Presentazione</a>
+        </div>
+    </header>
+
+    <main>
+
+        <h1>Impariamo come usare correttamente il fazzoletto!</h1>
+        <h2>Premi i pulsanti verdi per la guida audio</h2>
+        <section class="guide">
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/fazzoletto/prendere.png" alt="Icona che raffigura il verbo 'prendere'" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('prendi')">Prendi</button>
+                </div>
+                <audio id="prendi">
+                    <source src="materiale/audio/fazzoletto1.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/fazzoletto/fazzoletto.png" alt="Icona raffigura un pacchetto di fazzoletti" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('un_fazzoletto')">Un fazzoletto</button>
+                </div>
+                <audio id="un_fazzoletto">
+                    <source src="materiale/audio/fazzoletto2.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/fazzoletto/avvicinare.png" alt="Icona che rappresenta due oggetti che si avvicinano" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('avvicina')">Avvicina</button>
+                </div>
+                <audio id="avvicina">
+                    <source src="materiale/audio/fazzoletto3.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/fazzoletto/fazzoletto.png" alt="Icona che rappresenta un pacchetto di fazzoletti" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('fazzoletto')">Il fazzoletto</button>
+                </div>
+                <audio id="fazzoletto">
+                    <source src="materiale/audio/fazzoletto4.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/fazzoletto/naso.png" alt="Icona che rappresenta un naso" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('naso')">Al naso</button>
+                </div>
+                <audio id="naso">
+                    <source src="materiale/audio/fazzoletto5.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/fazzoletto/o.png" alt="Icona che rappresenta la lettera 'o'" class="icon">
+                </div>
+                <div>    
+                    <button onclick="playAudio('o')">O</button>
+                </div>
+                <audio id="o">
+                    <source src="materiale/audio/o.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/fazzoletto/bocca.png" alt="Icona che raffigura una bocca" class="icon">
+                </div>
+                <div>    
+                    <button onclick="playAudio('bocca')">Alla bocca</button>
+                </div>
+                <audio id="bocca">
+                    <source src="materiale/audio/fazzoletto6.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/fazzoletto/soffiare_naso.png" alt="Icona che rappresenta una persona che si soffia il naso" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('soffia_naso')">Soffia il naso</button>
+                </div>
+                <audio id="soffia_naso">
+                    <source src="materiale/audio/fazzoletto7.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/fazzoletto/o.png" alt="Icona che rappresenta la lettera 'o'" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('o')">O</button>
+                </div>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/fazzoletto/tossire.png" alt="Icona che rappresenta una persona che tossisce" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('tossisci')">Tossisci</button>
+                </div>
+                <audio id="tossisci">
+                    <source src="materiale/audio/fazzoletto8.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/fazzoletto/piegare.png" alt="Icona che rappresenta un foglio che viene piegato" class="icon">
+                </div>
+                <div>    
+                    <button onclick="playAudio('piega')">Piega</button>
+                </div>
+                <audio id="piega">
+                    <source src="materiale/audio/fazzoletto9.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/fazzoletto/fazzoletto.png" alt="Icona che rappresenta un pacchetto di fazzoletti" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('fazzoletto')">Il fazzoletto</button>
+                </div>
+                <audio id="fazzoletto">
+                    <source src="materiale/audio/fazzoletto10.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/fazzoletto/buttare_fazzoletto.png" alt="Icona che raffigura un fazzoletto che viene gettatto in un bidone" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('buttare_fazzoletto')">Butta il fazzoletto nel cestino</button>
+                </div>
+                <audio id="buttare_fazzoletto">
+                    <source src="materiale/audio/fazzoletto11.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/unghie/lavare_mani.png" alt="Icona che rappresenta due mani sotto l'acqua corrente" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('lavare_mani')">Lavati le mani</button>
+                </div>
+                <audio id="lavare_mani">
+                    <source src="materiale/audio/fazzoletto12.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="action">
+                <div>
+                    <img src="materiale/icone_CAA/ok.png" alt="Icona che rappresenta una persona con il pollice alzato" class="icon">
+                </div>
+                <div>
+                    <button onclick="playAudio('ottimo_lavoro')">Ottimo lavoro</button>
+                </div>
+                <audio id="ottimo_lavoro">
+                    <source src="materiale/audio/ok.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+        </section>
+
+        <h2>Consigli utili:</h2>
+            <h3>Taglia le unghie senza andare troppo vicino alla pelle</h3>
+    </main>
+
+    <footer>
+        <p>2024 - HygieneLife</p>
+        <p>I simboli pittografici utilizzati sono di proprietà del governo di Aragona e sono stati creati da Sergio Palao per <a href="http://www.arasaac.org">ARASAAC</a>, che li distribuisce sotto <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it">Licenza Creative Commons BY-NC-SA</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
