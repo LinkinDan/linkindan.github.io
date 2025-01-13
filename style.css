@@ -126,7 +126,7 @@ main {
 }
 
 .action:hover {
-    border: 3px solid #59bb59;
+    border: 3px solid #59bb59 !important;
 }
 
 .icon {
