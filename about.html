@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HygieneLife</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/open-dyslexic" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="materiale/favicon.png">
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/open-dyslexic');
+    </style>
+
+</head>
+<body>
+    <header>        
+        <div id="menu">
+            <div class="logo"><a href="index.html">HygieneLife</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="HygieneLife.pdf">Presentazione</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </div>
+        
+        <!-- menu dropdown su dispositivi mobili -->
+        <div class="dropdown" id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="HygieneLife.pdf">Presentazione</a>
+        </div>
+    </header>
+
+    <main>
+
+        <h1>Alcune informazioni su HygieneLife</h1>
+        <br>
+
+        <div class="about">
+            <h2>Perché</h2>
+            <p>HygieneLife nasce come progetto d'esame per il corso di "Tecnologie Assistive per la Didattica", A.A. 2024/2025 tenuto presso l'Università di Pisa dalla professoressa Pelagatti.</p>
+            <p>L'intento è quello di fornire uno strumento di supporto ai genitori e ai bambini stessi, in modo da agevolare l'apprendimento di buone abitudini di igiene personale.</p>
+            <h2>Come</h2>
+            <p>HygieneLife si basa sul concetto di "pensare per immagini" e utilizza la Comunicazione Aumentativa Alternativa (CAA) come principale metodo a sostegno della comunicazione.</p>
+            <p>La CAA non solo agevola la lettura, ma consente anche a bambini con disabilità cognitive di comprendere i concetti loro presentati.</p>
+            <p>I simboli pittografici utilizzati sono di proprietà del governo di Aragona e sono stati creati da Sergio Palao per <a href="https://arasaac.org/">ARASAAC</a> (Centro Aragonese di Comunicazione Aumentativa e Alternativa), che li distribuisce sotto Licenza Creative Commons BY-NC-SA.</p>
+            <p>Gli audio sono generati sfruttando <a href="https://ttsmp3.com/">TTSMP3.com</a>, un sito che consente di scaricare in formato MP3 l'audio prodotto a partire da un testo.</p>
+            <p>I video sono stati reperiti su YouTube.</p>
+            <h2>Chi</h2>
+            <p>Daniele Macchiarini (Matr. 615976), studente al primo anno del corso magistrale in Informatica Umanistica presso l'Universotà di Pisa.</p>
+        
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>2024 - HygieneLife</p>
+        <p>I simboli pittografici utilizzati sono di proprietà del governo di Aragona e sono stati creati da Sergio Palao per <a href="http://www.arasaac.org">ARASAAC</a>, che li distribuisce sotto <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it">Licenza Creative Commons BY-NC-SA</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
