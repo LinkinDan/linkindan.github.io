@@ -125,7 +125,7 @@ main {
     margin-top: 10px;
 }
 
-.action:focus {
+.action:hover {
     border: 3px solid #59bb59 !important;
 }
 
